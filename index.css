@@ -953,6 +953,7 @@ body {
   list-style: none;
   text-align: justify;
   margin: 150px auto;
+  padding: 0 20px;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(241, 1, 0, 1)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(241, 1, 0, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
 }
@@ -974,37 +975,35 @@ body {
   border-radius: 50%;
 }
 
-.timeline li:nth-child(even) .line {
+.timeline li .time-line {
   width: 0;
   height: 60px;
+  border-right: 3px dashed #F10100;
+}
+
+.timeline li:nth-child(even) .time-line {
   margin: -9px auto;
-  border-right: 3px dashed #F10100;
 }
 
-.timeline li:nth-child(odd) .line {
-  width: 0;
-  height: 60px;
+.timeline li:nth-child(odd) .time-line {
   margin: -30px auto;
-  border-right: 3px dashed #F10100;
 }
 
-.timeline li:nth-child(even) .point {
+.timeline li .time-point {
   width: 10px;
   height: 10px;
   border: 2px solid #F10100;
   border-radius: 50%;
-  margin-top: 9px;
   position: absolute;
+}
+
+.timeline li:nth-child(even) .time-point {
+  margin-top: 9px;
   left: 1px;
 }
 
-.timeline li:nth-child(odd) .point {
-  width: 10px;
-  height: 10px;
-  border: 2px solid #F10100;
-  border-radius: 50%;
+.timeline li:nth-child(odd) .time-point {
   margin-top: -78px;
-  position: absolute;
   top: 34px;
 }
 
@@ -1034,21 +1033,26 @@ body {
   transform: translateX(-50%);
 }
 
-.timeline li:after :first-line {
-  color:red;
-}
-
 .timeline li:nth-child(even):after {
-  bottom: 0;
-  margin-bottom: -60px;
-  transform: translate(-50%, 100%);
+  top: 100px;
 }
 
 .timeline li:nth-child(odd):after {
-  top: 0;
-  margin-top: -60px;
-  transform: translate(-50%, -100%);
+  bottom: 70px;
 }
+
+.timeline li:nth-child(odd) .time-header {
+  position: absolute;
+  bottom: 140px;
+  left: -14px;
+}
+
+.timeline li:nth-child(even) .time-header {
+  position: absolute;
+  top: 60px;
+  left: -14px;
+}
+
 
 /*Sector Another*/
 .sector-2 {
