@@ -680,10 +680,10 @@ body {
   z-index: 5;
 }
 
-.engineering-card-arrow{
+.engineering-card-arrow {
   margin: 26px 0;
-    font-size: 1.1rem;
-    color: #F10100;
+  font-size: 1.1rem;
+  color: #F10100;
 }
 
 .card-icon {
@@ -930,7 +930,7 @@ body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   letter-spacing: -0.2px;
-  margin: 33px 0;
+  margin: 17px 0;
   line-height: 25px;
   display: grid;
 }
@@ -943,6 +943,7 @@ body {
   .proud-text {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -1054,15 +1055,28 @@ body {
 }
 
 
-/*Sector Another*/
+/*Sector-2*/
 .sector-2 {
   background-image: url(/Image/background5.jpg);
-  margin-top: 42px;
+  margin-top: 47px;
   height: 590px;
 }
 
+.sector-2-header{
+  margin-top: 93px;
+  letter-spacing: 0.2px;
+}
+
+.sector-2-input-button {
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .receive-input {
-  width: 370px; 
-  height: 43px;
-  padding: 8px 15px;
+  width: 317px;
+  height: 41px;
+  padding: 8px 22px;
+  margin-right: 2px;
 }
