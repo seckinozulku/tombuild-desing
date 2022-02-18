@@ -28,10 +28,11 @@
 
 <body>
 
-    <!--Header-->
+    <!-- Header -->
     <header>
-        <div class="info-header container">
-            <div class="date-number">
+        <!-- Contact -->
+        <div class="contact-header container">
+            <div class="contact-info">
                 <div class="date">
                     <i class="fas fa-clock"></i>
                     <span>Mon-Sat 9AM - 6PM</span>
@@ -49,12 +50,13 @@
             </div>
         </div>
 
+        <!-- Main Header -->
         <div class="main-header container">
             <div class="logo-area">
                 <img src="/Image/tombuild-logo.png" alt="LOGO">
                 <span class="company-name">TOMBUILD</span>
             </div>
-            <div class="get-started">
+            <div class="card-area">
                 <i class="fas fa-search"></i>
                 <div class="shopping-cart">
                     <i class="fas fa-shopping-cart"> </i>
@@ -82,8 +84,9 @@
         </div>
     </nav>
 
-    <!--Slider-->
     <main>
+
+        <!-- Slider -->
         <div class="slider">
             <div class="slider-text-area">
                 <h1 class="slider-header">
@@ -98,87 +101,74 @@
                 </button>
             </div>
 
-            <div class="slider-area">
-                <div class="slider-bar">
-                    &#129120; <span class="numbers">01</span>
-                    <div class="stick">
-                        <div class="stick-two"></div>
+            <div class="slider-pagination">
+                <div class="slider-pages">
+                    &#129120; <span class="page">01</span>
+                    <div class="slider-pagination-progress">
+                        <div class="slider-pagination-progress active"></div>
                     </div>
-                    <span class="numbers">04</span>&#129122;
+                    <span class="page">04</span>&#129122;
                 </div>
-                <div class="slider-project-name">
+                <div class="slider-content-name">
                     Modern Construction Project 2022-New York City
                 </div>
             </div>
-            <div class="visit">
-                <div class="visit-project">
-                    Visit Project &#129122;
-                </div>
+            <div class="slider-visit-button">
+                Visit Project &#129122;
             </div>
         </div>
 
-        <!-- Section-Title -->
-        <section>
-            <div class="section-title">
-                <h6 class="section-title-header">
-                    WELCOME TO THOMBUILD CONSTRUCTION & INDUSTRIAL COMPANY
-                </h6>
-
-                <p class="section-title-text">
-                    We provide engineering, procurement,<br> and construction solutions<span class="red-point">.</span>
-                </p>
-            </div>
+        <!-- Section Title -->
+        <section class="section-title">
+            <h6 class="section-title-header">
+                WELCOME TO THOMBUILD CONSTRUCTION & INDUSTRIAL COMPANY
+            </h6>
+            <p class="section-title-text">
+                We provide engineering, procurement,<br> and construction solutions<span class="red-point">.</span>
+            </p>
         </section>
 
-        <!--Section-İntroduction-->
-        <section>
-            <div class="section-introduction container">
-                <div class="company-introduction">
-                    <h2 class="company-introduction-header">Offering construction and<br> engineering in North America
-                    </h2>
-                    <div class="red-line"></div>
-                    <p class="company-introduction-text">Our extensive experience in providing costructability solutions
-                        means we are able to meet cost and time requirements even under the most challenging conditions.
-                        Thanks to a range of innovative tools and the certifications of our Project Managers by the
-                        prestigious Project Management Institute (PMI), we can guarantee efficient project management.
-                    </p>
-                    <button class="introduction-button">Learn More &#129122;</button>
-                </div>
-                <div class="introduction-image">
-                    <img src="/Image/introduction-image-2.png" alt="Introduction">
-                </div>
+        <!-- Section Introduction -->
+        <section class="section-introduction container">
+            <div class="company-introduction">
+                <h2 class="company-introduction-header">Offering construction and<br> engineering in North America
+                </h2>
+                <div class="red-line"></div>
+                <p class="company-introduction-text">Our extensive experience in providing costructability solutions
+                    means we are able to meet cost and time requirements even under the most challenging conditions.
+                    Thanks to a range of innovative tools and the certifications of our Project Managers by the
+                    prestigious Project Management Institute (PMI), we can guarantee efficient project management.
+                </p>
+                <button class="introduction-button">Learn More &#129122;</button>
+            </div>
+            <div class="introduction-image">
+                <img src="/Image/introduction-image-2.png" alt="Introduction">
             </div>
         </section>
 
         <!--Section Experience-->
-        <section>
-            <div class="section-experience container">
-                <div class="experience-image">
-                    <img src="/Image/30years.png" alt="">
+        <section class="section-experience container">
+            <img src="/Image/30years.png" alt="" class="experience-image">
+
+            <div class="experience-info">
+                <div>
+                    <h2 class="experience-header">We transform reality</h2>
+                    <div class="red-line"></div>
                 </div>
 
-                <div class="experience-info">
-                    <div>
-                        <h2 class="experience-header">We transform reality</h2>
-                        <div class="red-line"></div>
-                    </div>
+                <div class="experience-text-area">
+                    <p class="experience-text-right">We develop highly complex technical projects geared to
+                        improving people's quality of life, powering social and economic development in cities,
+                        countries and regions.</p>
 
-                    <div class="experience-text-area">
-                        <p class="experience-text-right">We develop highly complex technical projects geared to
-                            improving people's quality of life, powering social and economic development in cities,
-                            countries and regions.</p>
-
-                        <p class="experience-text-left">We provide services around the world for the oil and gas,
-                            energy, mining, downstream and petrochemical segments, as well as industry and
-                            infrastructure civil works.</p>
-                    </div>
-
+                    <p class="experience-text-left">We provide services around the world for the oil and gas,
+                        energy, mining, downstream and petrochemical segments, as well as industry and
+                        infrastructure civil works.</p>
                 </div>
-
             </div>
         </section>
 
-        <!--Sector-->
+        <!-- Sector -->
         <section class="sector">
             <div class="section-sector">
                 <div class="sector-info">
@@ -197,7 +187,7 @@
                 </div>
             </div>
 
-            <!--Cards-->
+            <!-- Sector Cards -->
             <div class="card-container">
                 <div class="cards">
                     <div class="engineering-card card">
@@ -244,47 +234,43 @@
             </div>
         </section>
 
-        <!--Sector Activities-->
-        <section>
-            <div class="sector-activities container">
-                <div class="sector-activities-header">
-                    TRUSTED BY FORWARD-THINKING CONSTRUCTION & ENGINEERING TEAMS AROUND THE WORLD
+        <!-- Sector Activities -->
+        <section class="sector-activities container">
+            <div class="sector-activities-header">
+                TRUSTED BY FORWARD-THINKING CONSTRUCTION & ENGINEERING TEAMS AROUND THE WORLD
+            </div>
+
+            <div class="sector-activities-images">
+                <div class="sector-activities-sector one">
+                    <img src="/Image/sec1.png" alt="">
                 </div>
 
-                <div class="sector-activities-images">
-                    <div class="sector-activities-sector one">
-                        <img src="/Image/sec1.png" alt="">
-                    </div>
+                <div class="sector-activities-sector two">
+                    <img src="/Image/sec2.png" alt="">
+                </div>
 
-                    <div class="sector-activities-sector two">
-                        <img src="/Image/sec2.png" alt="">
-                    </div>
+                <div class="sector-activities-sector three">
+                    <img src="/Image/sec3.png" alt="">
+                </div>
 
-                    <div class="sector-activities-sector three">
-                        <img src="/Image/sec3.png" alt="">
-                    </div>
-
-                    <div class="sector-activities-sector four">
-                        <img src="/Image/sec4.png" alt="">
-                    </div>
-
+                <div class="sector-activities-sector four">
+                    <img src="/Image/sec4.png" alt="">
                 </div>
             </div>
         </section>
 
-        <!--Question-->
+        <!-- Questions -->
         <section class="question">
             <div class="question-sector">
-                <div class="question-info">
-                    <h2 class="question-header">Got some questions? The following are frequently asked<br> questions we
-                        get asked about<span class="red-point">.</span>
-                    </h2>
-                </div>
+                <h2 class="question-header">Got some questions? The following are frequently asked<br> questions we
+                    get asked about<span class="red-point">.</span>
+                </h2>
 
                 <div class="triangle-right-question"></div>
                 <div class="triangle-left-question"></div>
             </div>
 
+            <!-- Accordion Questions -->
             <div class="accordion-container container">
                 <div class="accordion-image">
                     <img src="/Image/question-image.png" alt="">
@@ -330,53 +316,54 @@
                 </div>
             </div>
         </section>
-        
-        <!--Proud-->
-        <section>
-            <div class="section-proud container">
-                <div class="proud">
-                    <h2 class="proud-header">A part of us is left behind at each project we carry<br>out, and this is
-                        something that makes us proud
-                    </h2>
-                    <div class="red-line"></div>
-                    <p class="proud-text">For the last 50 years, we have been seeking out challenges that will allow us
-                        to learn and be<br> better at what we do.
-                        <button class="proud introduction-button">Learn More &#129122;</button>
-                    </p>
 
-                </div>
-            </div>
+        <!-- Proud -->
+        <section class="section-proud container">
+            <h2 class="proud-header">A part of us is left behind at each project we carry<br>out, and this is
+                something that makes us proud
+            </h2>
+            <div class="red-line"></div>
+            <p class="proud-text">For the last 50 years, we have been seeking out challenges that will allow us
+                to learn and be<br> better at what we do.
+                <button class="proud introduction-button">Learn More &#129122;</button>
+            </p>
         </section>
 
-        <!--Timeline-->
+        <!-- Timeline -->
         <section class="container">
             <ul class="timeline">
-                <li data-year="1970" data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
+                <li data-year="1970"
+                    data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
                     <div class="time-line"> </div>
                     <div class="time-point"></div>
                     <h3 class="time-header">başık</h3>
                 </li>
-                <li data-year="1982" data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
+                <li data-year="1982"
+                    data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
                     <div class="time-line"> </div>
                     <div class="time-point"></div>
                     <h3 class="time-header">başık</h3>
                 </li>
-                <li data-year="1990" data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
+                <li data-year="1990"
+                    data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
                     <div class="time-line"> </div>
                     <div class="time-point"></div>
                     <h3 class="time-header">başık</h3>
                 </li>
-                <li data-year="2002" data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
+                <li data-year="2002"
+                    data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
                     <div class="time-line"> </div>
                     <div class="time-point"></div>
                     <h3 class="time-header">başık</h3>
                 </li>
-                <li data-year="2010" data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
+                <li data-year="2010"
+                    data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
                     <div class="time-line"> </div>
                     <div class="time-point"></div>
                     <h3 class="time-header">başık</h3>
                 </li>
-                <li data-year="2022" data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
+                <li data-year="2022"
+                    data-text="The construction of the NY Railway Complex strengthened relations between the United States and Canada">
                     <div class="time-line"> </div>
                     <div class="time-point"></div>
                     <h3 class="time-header">başık</h3>
@@ -384,7 +371,7 @@
             </ul>
         </section>
 
-        <!--Sector Another-->
+        <!-- Sector Another -->
         <section class="sector">
             <div class="section-sector sector-2">
                 <div class="sector-info">
@@ -406,7 +393,7 @@
                 </div>
             </div>
 
-            <!--Cards-->
+            <!-- Cards -->
             <div class="card-container">
                 <div class="cards">
                     <div class="engineering-card card">
