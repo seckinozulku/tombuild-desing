@@ -864,8 +864,6 @@ body {
   background-color: #fff;
   width: 100%;
   text-align: left;
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
   height: 70px;
@@ -906,17 +904,10 @@ body {
 .accordion .arrow {
   position: absolute;
   right: 36px;
-  top: 29px;
+  top: 25px;
   font-size: 18px;
   color: #f6483b;
 }
-
-/* @media screen and (min-width: 992px) {
-   {
-    
-  }
-} */
-
 
 /*Proud*/
 
@@ -958,13 +949,12 @@ body {
 /*Timeline*/
 
 .timeline {
-  width: 800px;
   height: 20px;
   list-style: none;
   text-align: justify;
   margin: 150px auto;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(191, 128, 11, 1)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(191, 128, 11, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(241, 1, 0, 1)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(241, 1, 0, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
 }
 
 .timeline:after {
@@ -975,48 +965,47 @@ body {
 
 .timeline li {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #F2BB13;
+  width: 14px;
+  height: 14px;
+  background: #F10100;
   text-align: center;
   line-height: 1.2;
   position: relative;
   border-radius: 50%;
 }
 
-.timeline li:nth-child(odd) .line {
-  width: 0;
-  height: 60px;
-  margin: -9px auto;
-  border-right: 3px dashed #F2BB13;
-}
-
 .timeline li:nth-child(even) .line {
   width: 0;
   height: 60px;
-  margin: -30px auto;
-  border-right: 3px dashed #F2BB13;
+  margin: -9px auto;
+  border-right: 3px dashed #F10100;
 }
 
-.timeline li:nth-child(odd) .point {
-  width: 10px;
-  height: 10px;
-  border: 2px solid #F2BB13;
-  border-radius: 50%;
-  margin-top: 13px;
-  position: absolute;
-  left: 3px;
+.timeline li:nth-child(odd) .line {
+  width: 0;
+  height: 60px;
+  margin: -30px auto;
+  border-right: 3px dashed #F10100;
 }
 
 .timeline li:nth-child(even) .point {
   width: 10px;
   height: 10px;
-  border: 2px solid #F2BB13;
+  border: 2px solid #F10100;
+  border-radius: 50%;
+  margin-top: 9px;
+  position: absolute;
+  left: 1px;
+}
+
+.timeline li:nth-child(odd) .point {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #F10100;
   border-radius: 50%;
   margin-top: -78px;
   position: absolute;
-  top: 30px;
-  left: 2px;
+  top: 34px;
 }
 
 .timeline li:before {
@@ -1028,12 +1017,12 @@ body {
   transform: translateX(-50%);
 }
 
-.timeline li:nth-child(odd):before {
-  top: -40px;
+.timeline li:nth-child(even):before {
+  top: -50px;
 }
 
-.timeline li:nth-child(even):before {
-  bottom: -40px;
+.timeline li:nth-child(odd):before {
+  bottom: -50px;
 }
 
 .timeline li:after {
@@ -1045,13 +1034,17 @@ body {
   transform: translateX(-50%);
 }
 
-.timeline li:nth-child(odd):after {
+.timeline li:after :first-line {
+  color:red;
+}
+
+.timeline li:nth-child(even):after {
   bottom: 0;
   margin-bottom: -60px;
   transform: translate(-50%, 100%);
 }
 
-.timeline li:nth-child(even):after {
+.timeline li:nth-child(odd):after {
   top: 0;
   margin-top: -60px;
   transform: translate(-50%, -100%);
