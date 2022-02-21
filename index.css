@@ -921,6 +921,11 @@ body {
     top: -6px;
     right: -7px;
   }
+
+  .accordion-image img {
+    padding-right: 100px;
+  }
+  
 }
 
 
@@ -1126,7 +1131,7 @@ body {
 }
 
 .map-location-container {
-  background-image: url(/Image/map-location.png);
+  background-image: url(/Image/point-map.png);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -1168,16 +1173,12 @@ body {
 
 .card-3 {
   width: 268px;
-  height: 278px;
+  min-height: 278px;
   background-color: #FFFFFF;
-  margin-right: 27px;
   border: 1px solid #F2F2F2;
   text-align: center;
   position: relative;
-}
-
-.support-card{
-  margin: 0;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1185,6 +1186,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
+  }
+
+  .card-3 {
+    margin-right: 27px;
+    margin-bottom: 0;
+  }
+  .support-card {
+    margin-right: 0;
   }
 }
 
@@ -1218,19 +1227,28 @@ body {
 
 /*Footer*/
 
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #878787;
-}
-
 .footer {
   background-color: #212121;
   width: 100%;
   height: 440px;
   margin-top: 115px;
 }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #878787;
+  height: 100%;
+}
+
+.yellow-point {
+  background-color: #00D75E;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
 
 .footer-tombuild-text {
   color: #FFFFFF;
