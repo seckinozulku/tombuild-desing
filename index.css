@@ -1232,12 +1232,8 @@ body {
   margin: 17px 0 0 35px;
 }
 
-/* Map Location */
+/** Map Location **/
 
-.map-location {
-  /*display: flex;
-  align-items: center;*/
-}
 
 .map-location-container {
   background-image: url(/Image/point-map.png);
@@ -1247,7 +1243,6 @@ body {
   width: 100%;
   height: 656px;
   position: relative;
-  /* margin-top: 10px;*/
 }
 
 .location-cards {
@@ -1268,17 +1263,11 @@ body {
   font-weight: 600;
 }
 
-/* @media screen and (min-width: 1700px) {
-  .map-location-container {
-    width: 1685px;
-  }
-} */
-
 .map-location-card-container {
   margin-top: -395px;
 }
 
-/* Map Location Card */
+/** Map Location Card **/
 
 .card-3 {
   width: 268px;
@@ -1335,31 +1324,29 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/*Cursor Pointer*/
-.logo-area, .social-media i, .fa-search, .shopping-cart, .started-button, .slider-button, .slider-pages, .slider-visit-button, .introduction-button, .card, .right-left-circle, .proud, .card-3, .footer-item {
+/**Cursor Pointer**/
+.logo-area, .social-media i, .fa-search, .shopping-cart, .started-button, .slider-button, .slider-pages, .slider-visit-button, .introduction-button, .card, .right-left-circle, .proud, .card-3, .footer-item , .policy {
   cursor: pointer;
 }
 
-/*Footer*/
+/**Footer**/
 
 .footer {
   background-color: #212121;
   width: 100%;
-  height: 440px;
   margin-top: 115px;
 }
 
+
+
 .footer-container {
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
+  display: block;
+  text-align: center;
   color: #878787;
   height: 90%;
 }
 
-.footer-tombuild {
-  width: 312px;
-}
+
 
 .footer-tombuild i {
   color: #F20201;
@@ -1398,8 +1385,9 @@ body {
 }
 
 .careers {
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 155px;
+  margin: auto;
 }
 
 .yellow-point {
@@ -1408,6 +1396,29 @@ body {
   height: 8px;
   border-radius: 50%;
   margin-left: 4px;
+  position: absolute;
+  right: 36px;
+  top: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 440px;
+  }
+
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-tombuild {
+    width: 312px;
+  }
+
+  .yellow-point{
+    right: 79px;
+  }
 }
 
 .newsletter-input-input {
@@ -1421,7 +1432,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 48px 32px 0 0;
+  margin: 25px 0;
 }
 
 .privacy-policy {
@@ -1431,9 +1442,21 @@ body {
   letter-spacing: 0.2px;
   color: #959595;
   text-align: center;
-  margin: 0 372px;
+  margin: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .privacy-policy{
+    margin: 0 372px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter-social-media {
+    margin: 48px 32px 0 0;
+  }
+
+}
 .privacy-policy span {
   color: #FFFFFF;
 }
