@@ -278,7 +278,7 @@ body {
 /** Slider **/
 
 .slider {
-  background-image: url("/Image/background.jpg");
+  background-image: url("../Image/background.jpg");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -591,7 +591,7 @@ body {
 }
 
 .section-sector {
-  background-image: url(/Image/background2.jpg);
+  background-image: url(../Image/background2.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -808,7 +808,7 @@ body {
 }
 
 .question-sector {
-  background-image: url(/Image/background3.jpg);
+  background-image: url(../Image/background3.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -1200,7 +1200,7 @@ body {
 
 /**Sector-2 **/
 .sector-2 {
-  background-image: url(/Image/background5.jpg);
+  background-image: url(../Image/background5.jpg);
   margin-top: 33px;
   height: 590px;
 }
@@ -1247,7 +1247,7 @@ body {
 
 
 .map-location-container {
-  background-image: url(/Image/point-map.png);
+  background-image: url(../Image/point-map.png);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
