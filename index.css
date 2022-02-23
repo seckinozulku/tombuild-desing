@@ -349,7 +349,7 @@ body {
 }
 
 .slider-pages .page {
-  margin: 0 15px;
+  margin: 0 13px;
   font-size: 1.3rem;
 }
 
@@ -372,6 +372,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.slider-content-name {
+  font-size: 1.2rem;
+  letter-spacing: -0.4px;
+  font-family: 'Roboto';
+  margin-left: 32px;
 }
 
 .slider-visit-button {
@@ -1438,10 +1445,11 @@ body {
 }
 
 .newsletter-input-input {
-  width: 170px;
+  width: 140px;
   height: 45px;
   background-color: #111111;
   border: none;
+  padding: 0 15px;
 }
 
 .newsletter-social-media {
