@@ -790,7 +790,7 @@ body {
   }
 
   .accordion-image {
-    padding-top: 30px;
+    padding-top: 65px;
   }
 
   .card-container-2 {
@@ -1375,7 +1375,7 @@ body {
   letter-spacing: 1px;
   font-size: 1.2rem;
   font-family: 'Chivo', sans-serif;
-  margin-top: 97px;
+  padding-top: 97px;
 }
 
 .footer-tombuild-text {
